@@ -11,20 +11,28 @@ const CollegeTable = ({ colleges }) => {
   const [page, setPage] = useState(1);
   const [showToast, setShowToast] = useState(null);
 
-  const itemsPerPage = 10;
+  const itemsPerPage = 20;
 
   useEffect(() => {
-    const filteredColleges = colleges.filter((college) =>
-      college.name.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    // Function to load visible colleges based on search and pagination
+    const loadColleges = () => {
+      const filteredColleges = colleges.filter((college) =>
+        college.name.toLowerCase().includes(searchQuery.toLowerCase())
+      );
 
-    setVisibleColleges(filteredColleges.slice(0, page * itemsPerPage));
+      // Calculate the slice based on the current page
+      const endIndex = page * itemsPerPage;
+      setVisibleColleges(filteredColleges.slice(0, endIndex));
 
-    if (searchQuery && filteredColleges.length > 0) {
-      setShowToast({ message: "Search result found", type: "success" });
-    } else if (searchQuery && filteredColleges.length === 0) {
-      setShowToast({ message: "No search result found", type: "error" });
-    }
+      // Show toast messages
+      if (searchQuery && filteredColleges.length > 0) {
+        setShowToast({ message: "Search result found", type: "success" });
+      } else if (searchQuery && filteredColleges.length === 0) {
+        setShowToast({ message: "No search result found", type: "error" });
+      }
+    };
+
+    loadColleges();
   }, [page, searchQuery, colleges]);
 
   const sortColleges = (key) => {
@@ -48,20 +56,28 @@ const CollegeTable = ({ colleges }) => {
   };
 
   const handleScroll = (e) => {
-    if (e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight) {
+    const bottom =
+      e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
+    if (bottom) {
       setPage((prevPage) => prevPage + 1);
     }
   };
 
-  const handleSearch = () => {
-    setPage(1);
-    setVisibleColleges(
-      colleges
-        .filter((college) =>
-          college.name.toLowerCase().includes(searchQuery.toLowerCase())
-        )
-        .slice(0, itemsPerPage)
-    );
+  const handleSearchOrClear = () => {
+    if (searchQuery.trim()) {
+      setSearchQuery("");
+      setPage(1);
+      setVisibleColleges(colleges.slice(0, itemsPerPage));
+    } else {
+      setPage(1);
+      setVisibleColleges(
+        colleges
+          .filter((college) =>
+            college.name.toLowerCase().includes(searchQuery.toLowerCase())
+          )
+          .slice(0, itemsPerPage)
+      );
+    }
   };
 
   const renderToast = () => {
@@ -83,7 +99,9 @@ const CollegeTable = ({ colleges }) => {
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
-        <button onClick={handleSearch}>Search</button>
+        <button onClick={handleSearchOrClear}>
+          {searchQuery.trim() ? "Clear" : "Search"}
+        </button>
       </div>
       <table>
         <thead>

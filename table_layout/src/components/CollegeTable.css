@@ -1,35 +1,36 @@
 /* Container styling */
 .college-table-container {
-  height: 400px; /* Adjust the height as needed */
-  overflow-y: auto; /* Enable vertical scrolling */
-  border: 1px solid #ccc; /* Add a border */
   padding: 20px;
-  background-color: #f9f9f9; /* Light background color */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
-  position: relative; /* For positioning the toast */
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  height: 500px; /* Set a fixed height to allow scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+  position: relative; /* For absolute positioning of the toast */
 }
 
 /* Search bar styling */
 .search-bar {
+  width: 80%;
   display: flex;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .search-bar input {
   flex: 1;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 4px 0 0 4px;
-  outline: none;
+  border-radius: 4px;
+  margin-right: 10px;
 }
 
 .search-bar button {
-  padding: 10px;
+  padding: 10px 20px;
   background-color: #4caf50;
   color: white;
-  border: 1px solid #4caf50;
-  border-radius: 0 4px 4px 0;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -41,16 +42,14 @@
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #fff; /* White background */
 }
 
-/* Header styling */
 th {
-  background-color: #4caf50; /* Green background for header */
-  color: white; /* White text */
-  padding: 12px; /* Padding for header cells */
-  text-align: left; /* Align text to the left */
-  cursor: pointer; /* Pointer cursor for sortable headers */
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  cursor: pointer;
   font-weight: bold;
 }
 
@@ -58,31 +57,26 @@ th span {
   margin-left: 5px;
 }
 
-/* Body cell styling */
 td {
-  padding: 12px; /* Padding for table cells */
-  border-bottom: 1px solid #ddd; /* Border between rows */
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
 }
 
-/* Row styling */
 tr:nth-child(even) {
-  background-color: #f2f2f2; /* Alternate row color */
+  background-color: #f2f2f2;
 }
 
-/* Hover effect */
 tr:hover {
-  background-color: #e0f7fa; /* Light cyan background on hover */
+  background-color: #e0f7fa;
 }
 
-/* Specific column styles */
 th,
 td {
-  text-align: left; /* Align text to the left */
+  text-align: left;
 }
 
-/* Featured column styling */
 td:nth-child(5) {
-  text-align: center; /* Center align for featured column */
+  text-align: center;
 }
 
 /* Responsive design */
@@ -97,7 +91,7 @@ td:nth-child(5) {
   }
 
   table {
-    font-size: 14px; /* Smaller font size for smaller screens */
+    font-size: 14px;
   }
 }
 
@@ -113,9 +107,9 @@ td:nth-child(5) {
 }
 
 .toast.success {
-  background-color: #4caf50; /* Green for success */
+  background-color: #4caf50;
 }
 
 .toast.error {
-  background-color: #f44336; /* Red for error */
+  background-color: #f44336;
 }
