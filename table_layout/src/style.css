@@ -1,12 +1,17 @@
 .app {
   font-family: Arial, sans-serif;
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
 }
 
 .college-table-container {
   height: 400px;
   overflow-y: auto;
   border: 1px solid #ccc;
+  width: 100%;
 }
 
 table {

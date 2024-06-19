@@ -4,7 +4,7 @@
     "collegedunia_rating": 4.5,
     "fees": 50000,
     "user_review_rating": 4.0,
-    "featured": true,
+    "featured": false,
     "ranking": 5
   },
   {
@@ -20,7 +20,7 @@
     "collegedunia_rating": 4.2,
     "fees": 60000,
     "user_review_rating": 3.8,
-    "featured": true,
+    "featured": false,
     "ranking": 2
   },
   {
@@ -52,7 +52,7 @@
     "collegedunia_rating": 4.3,
     "fees": 70000,
     "user_review_rating": 4.1,
-    "featured": true,
+    "featured": false,
     "ranking": 7
   },
   {
@@ -84,7 +84,7 @@
     "collegedunia_rating": 4.0,
     "fees": 47000,
     "user_review_rating": 3.6,
-    "featured": true,
+    "featured": false,
     "ranking": 11
   },
   {
@@ -100,7 +100,7 @@
     "collegedunia_rating": 4.5,
     "fees": 54000,
     "user_review_rating": 4.0,
-    "featured": true,
+    "featured": false,
     "ranking": 13
   },
   {
@@ -116,7 +116,7 @@
     "collegedunia_rating": 4.3,
     "fees": 62000,
     "user_review_rating": 4.2,
-    "featured": true,
+    "featured": false,
     "ranking": 15
   },
   {
@@ -148,7 +148,7 @@
     "collegedunia_rating": 4.2,
     "fees": 62000,
     "user_review_rating": 4.1,
-    "featured": true,
+    "featured": false,
     "ranking": 19
   },
   {

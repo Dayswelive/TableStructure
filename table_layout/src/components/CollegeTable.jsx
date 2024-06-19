@@ -162,7 +162,12 @@ const CollegeTable = ({ colleges }) => {
           {visibleColleges.length > 0 ? (
             visibleColleges.map((college, index) => (
               <tr key={index}>
-                <td>{college.name}</td>
+                <td>
+                  {college.featured && (
+                    <span className="featured-flag">Featured</span>
+                  )}
+                  {college.name}
+                </td>
                 <td>{college.collegedunia_rating}</td>
                 <td>{college.fees}</td>
                 <td>{college.user_review_rating}</td>
