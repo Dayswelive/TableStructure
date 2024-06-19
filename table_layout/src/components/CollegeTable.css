@@ -11,10 +11,10 @@
 
 /* Search bar styling */
 .search-bar {
-  width: 80%;
+  width: 88%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .search-bar input {
