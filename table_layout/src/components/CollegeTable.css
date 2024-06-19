@@ -1,0 +1,121 @@
+/* Container styling */
+.college-table-container {
+  height: 400px; /* Adjust the height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ccc; /* Add a border */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  position: relative; /* For positioning the toast */
+}
+
+/* Search bar styling */
+.search-bar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #45a049;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff; /* White background */
+}
+
+/* Header styling */
+th {
+  background-color: #4caf50; /* Green background for header */
+  color: white; /* White text */
+  padding: 12px; /* Padding for header cells */
+  text-align: left; /* Align text to the left */
+  cursor: pointer; /* Pointer cursor for sortable headers */
+  font-weight: bold;
+}
+
+th span {
+  margin-left: 5px;
+}
+
+/* Body cell styling */
+td {
+  padding: 12px; /* Padding for table cells */
+  border-bottom: 1px solid #ddd; /* Border between rows */
+}
+
+/* Row styling */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Alternate row color */
+}
+
+/* Hover effect */
+tr:hover {
+  background-color: #e0f7fa; /* Light cyan background on hover */
+}
+
+/* Specific column styles */
+th,
+td {
+  text-align: left; /* Align text to the left */
+}
+
+/* Featured column styling */
+td:nth-child(5) {
+  text-align: center; /* Center align for featured column */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .college-table-container {
+    padding: 10px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  table {
+    font-size: 14px; /* Smaller font size for smaller screens */
+  }
+}
+
+/* Toast styling */
+.toast {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  opacity: 0.9;
+}
+
+.toast.success {
+  background-color: #4caf50; /* Green for success */
+}
+
+.toast.error {
+  background-color: #f44336; /* Red for error */
+}

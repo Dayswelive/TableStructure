@@ -1,0 +1,26 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.college-table-container {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  cursor: pointer;
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "name": "ABC College",
+    "collegedunia_rating": 4.5,
+    "fees": 50000,
+    "user_review_rating": 4.0,
+    "featured": true
+  },
+  {
+    "name": "XYZ University",
+    "collegedunia_rating": 4.7,
+    "fees": 75000,
+    "user_review_rating": 4.2,
+    "featured": false
+  },
+  {
+    "name": "PQR Institute",
+    "collegedunia_rating": 4.2,
+    "fees": 60000,
+    "user_review_rating": 3.8,
+    "featured": true
+  },
+  {
+    "name": "LMN University",
+    "collegedunia_rating": 4.8,
+    "fees": 85000,
+    "user_review_rating": 4.5,
+    "featured": false
+  },
+  {
+    "name": "DEF College",
+    "collegedunia_rating": 4.0,
+    "fees": 55000,
+    "user_review_rating": 3.9,
+    "featured": true
+  },
+  {
+    "name": "GHI University",
+    "collegedunia_rating": 3.9,
+    "fees": 45000,
+    "user_review_rating": 3.7,
+    "featured": false
+  },
+  {
+    "name": "JKL Institute",
+    "collegedunia_rating": 4.3,
+    "fees": 70000,
+    "user_review_rating": 4.1,
+    "featured": true
+  },
+  {
+    "name": "NOP University",
+    "collegedunia_rating": 4.6,
+    "fees": 90000,
+    "user_review_rating": 4.4,
+    "featured": false
+  },
+  {
+    "name": "QRS College",
+    "collegedunia_rating": 3.8,
+    "fees": 40000,
+    "user_review_rating": 3.5,
+    "featured": true
+  },
+  {
+    "name": "TUV University",
+    "collegedunia_rating": 4.1,
+    "fees": 60000,
+    "user_review_rating": 3.9,
+    "featured": false
+  },
+  {
+    "name": "UVW College",
+    "collegedunia_rating": 4.0,
+    "fees": 47000,
+    "user_review_rating": 3.6,
+    "featured": true
+  },
+  {
+    "name": "RST University",
+    "collegedunia_rating": 4.4,
+    "fees": 71000,
+    "user_review_rating": 4.1,
+    "featured": false
+  },
+  {
+    "name": "EFG Institute",
+    "collegedunia_rating": 4.5,
+    "fees": 54000,
+    "user_review_rating": 4.0,
+    "featured": true
+  },
+  {
+    "name": "HJK University",
+    "collegedunia_rating": 3.7,
+    "fees": 38000,
+    "user_review_rating": 3.4,
+    "featured": false
+  },
+  {
+    "name": "LMO College",
+    "collegedunia_rating": 4.3,
+    "fees": 62000,
+    "user_review_rating": 4.2,
+    "featured": true
+  },
+  {
+    "name": "STU University",
+    "collegedunia_rating": 4.7,
+    "fees": 89000,
+    "user_review_rating": 4.6,
+    "featured": false
+  },
+  {
+    "name": "PQR Institute",
+    "collegedunia_rating": 4.1,
+    "fees": 50000,
+    "user_review_rating": 3.9,
+    "featured": true
+  },
+  {
+    "name": "XYZ University",
+    "collegedunia_rating": 4.8,
+    "fees": 95000,
+    "user_review_rating": 4.7,
+    "featured": false
+  },
+  {
+    "name": "MNO College",
+    "collegedunia_rating": 4.2,
+    "fees": 62000,
+    "user_review_rating": 4.1,
+    "featured": true
+  },
+  {
+    "name": "KLM University",
+    "collegedunia_rating": 4.6,
+    "fees": 87000,
+    "user_review_rating": 4.3,
+    "featured": false
+  }
+]
