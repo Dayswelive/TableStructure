@@ -146,7 +146,16 @@ const CollegeTable = ({ colleges }) => {
                   : " ▲"}
               </span>
             </th>
-            <th>Featured</th>
+            <th onClick={() => sortColleges("ranking")}>
+              Ranking
+              <span>
+                {sortConfig.key === "ranking"
+                  ? sortConfig.direction === "ascending"
+                    ? " ▲"
+                    : " ▼"
+                  : " ▲"}
+              </span>
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -157,7 +166,7 @@ const CollegeTable = ({ colleges }) => {
                 <td>{college.collegedunia_rating}</td>
                 <td>{college.fees}</td>
                 <td>{college.user_review_rating}</td>
-                <td>{college.featured ? "Yes" : "No"}</td>
+                <td>{college.ranking}</td>
               </tr>
             ))
           ) : (
